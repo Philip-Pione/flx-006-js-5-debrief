@@ -11,15 +11,15 @@
           let numOfNames = window.prompt("How many names do you want? (up to 20)");
           if (numOfNames > 20) {
               alert('Please enter a number lower than 20');
-            }
+            } else {
            for (let i = 0; i < numOfNames; i++){
                 let random = Math.floor(Math.random() * nameList.length);
-                listOfRandoms.push(nameList[random]);
+                listOfRandoms.push(" " + nameList[random]);
                 if (listOfRandoms.length === parseInt(numOfNames)) {
                     output.innerHTML = listOfRandoms;
                 }                         
             }
-        
+        }
        };
     
 
